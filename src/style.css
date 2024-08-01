@@ -13,11 +13,17 @@ nav {
 button {
     background-color: yellow;
     color: black;
-    border : none;
+    border: none;
     padding: 20px;
     margin: 20px;
 }
 
-button:hover{
+button:hover {
     background-color: beige;
+}
+
+.home {
+    width: 80%;
+    background: url('./home.jpg');
+    padding: 50px;
 }
