@@ -20,6 +20,9 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(woff|woff2|ttf|eot|otf)$/i,
+      },
     ],
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
