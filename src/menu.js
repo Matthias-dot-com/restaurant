@@ -1,4 +1,9 @@
 export default function createMenu() {
-  alert("I am menu!");
- 
+  const container = document.createElement("div");
+
+  const title = document.createElement("div");
+  title.textContent = "Our Menu";
+
+  container.appendChild(title);
+  return container;
 }

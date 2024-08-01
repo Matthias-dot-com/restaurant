@@ -14,9 +14,11 @@
 @font-face {
     font-family: 'AmazingFont';
     src: url('./GoldropspersonaluseRegular-9Ynn5.otf') format(opentype),
+        url('./my-font.woff') format('woff'),
         url('./amazing.otf') format('opentype');
-        font-weight: 600;
+    font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 nav {
@@ -40,8 +42,8 @@ button {
 
 button:hover {
     background-color: red;
-    transform:  rotate(20deg) ;
-    
+    transform: rotate(20deg);
+
 }
 
 .home {

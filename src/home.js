@@ -1,3 +1,4 @@
+const content = document.querySelector("div#content");
 
 export default function createHome() {
   const div = document.createElement("div");
@@ -24,8 +25,8 @@ export default function createHome() {
   });
 
   bottom.appendChild(uList);
-  document.body.appendChild(restaurantNameContainer);
-  document.body.appendChild(bottom);
+  content.appendChild(restaurantNameContainer);
+  content.appendChild(bottom);
   return div;
 }
 // class HomePage {
