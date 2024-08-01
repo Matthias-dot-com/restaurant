@@ -47,7 +47,7 @@ button:hover {
 }
 
 .home {
-    background: url('../assets/images/home.png') no-repeat center center;
+    background: url('./images/home.png') no-repeat center center;
     background-size: cover;
     height: 91vh;
 
@@ -100,3 +100,99 @@ ul>li:hover {
     background-color: yellow;
     color: black;
 }
+
+/* menu */
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: gold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu-title {
+    font-family: 'AmazingFont';
+    font-size: 2rem;
+    margin: 10px 0 32px;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+
+.menu {
+    padding: 5rem 0;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem 2rem;
+    max-width: 25rem;
+}
+
+.photo {
+    object-fit: cover;
+    height: 200px;
+    border: 0.25rem solid gold;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+}
+
+.item-info header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted gray;
+}
+
+.item-info h4 {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: gold;
+}
+
+.item-text {
+    margin-bottom: 0;
+    padding-top: 1rem;
+}
+
+
+
+  
+  @media screen and (min-width: 768px) {
+    .menu-item {
+      grid-template-columns: 225px 1fr;
+      gap: 0 1.25rem;
+      max-width: 40rem;
+    }
+    .photo {
+      height: 175px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .section-center {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      height: 150px;
+    }
+  }
+  
